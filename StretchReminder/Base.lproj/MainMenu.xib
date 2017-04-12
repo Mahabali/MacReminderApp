@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="StretchReminder" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="MKF-Kf-NJk" customClass="StatusMenuController" customModule="StretchReminder" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthMenuItem" destination="1C3-hj-fbW" id="zT2-4Y-chv"/>
+                <outlet property="firstMenuItem" destination="CQR-fw-hdX" id="cHR-Ej-P6c"/>
+                <outlet property="fourthMenuItem" destination="8ak-Se-eCP" id="fYe-ja-L9e"/>
+                <outlet property="secondMenuItem" destination="oLY-LS-k2D" id="ez0-wc-oQd"/>
+                <outlet property="statusMenu" destination="LVo-2o-DBQ" id="2o1-qn-ENn"/>
+                <outlet property="thirdMenuItem" destination="pUK-Kd-uD8" id="Fso-OG-4Bb"/>
+            </connections>
+        </customObject>
+        <menu id="LVo-2o-DBQ">
+            <items>
+                <menuItem title="10 minutes" id="CQR-fw-hdX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="tenMinutesClicked:" target="MKF-Kf-NJk" id="2Ds-wc-N6E"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="HQk-bg-ll4"/>
+                <menuItem title="20 minutes" id="oLY-LS-k2D">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="twentyMinutesClicked:" target="MKF-Kf-NJk" id="kX8-aY-bb5"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Oi3-3W-23a"/>
+                <menuItem title="30 minutes" id="pUK-Kd-uD8">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="thirtyMinutesClicked:" target="MKF-Kf-NJk" id="KFr-k4-EyG"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="qmy-MI-PKu"/>
+                <menuItem title="40 minutes" id="8ak-Se-eCP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="fortyMinutesClicked:" target="MKF-Kf-NJk" id="fIh-ES-oPk"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="gn4-4Z-vwM"/>
+                <menuItem title="50 minutes" id="1C3-hj-fbW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="fiftyMinutesClicked:" target="MKF-Kf-NJk" id="TZf-pA-qUj"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="d4z-kX-qfK"/>
+                <menuItem title="Quit" id="Pm7-lb-BJ3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="MKF-Kf-NJk" id="LNW-bu-8Yb"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="SAg-5X-p0M"/>
+    </objects>
+</document>
