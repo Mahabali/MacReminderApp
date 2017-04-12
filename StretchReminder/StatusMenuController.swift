@@ -38,7 +38,7 @@ class StatusMenuController: NSObject,NSMenuDelegate {
         self.selected(menu: sender, time: 5.0)
     }
     @IBAction func twentyMinutesClicked(_ sender: NSMenuItem){
-        let twentyMinutes = 2 * secondsValue
+        let twentyMinutes = 20 * secondsValue
         self.selected(menu: sender, time: twentyMinutes)
         
     }
